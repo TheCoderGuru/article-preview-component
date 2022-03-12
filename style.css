@@ -1,0 +1,88 @@
+/* css reusable classes to reset all the browser settings to default */
+
+:root{
+  --very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --desaturated-dark-blue: hsl(214, 17%, 51%);
+  --grayish-blue: hsl(212, 23%, 69%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
+  --font-body: 13px;
+  --font-base: 'Manrope', sans-serif;
+}
+*, *::before, *::after{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body{
+  background-color: var(--light-grayish-blue);
+  font-family: var(--font-base);
+}
+
+.container{
+  background-color: white;
+  margin: 5rem auto;
+  margin-left: 6rem;
+  margin-right: 6rem;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  width: auto;
+  position: relative;
+}
+
+.container__title{
+  margin-top: 2rem;
+  margin-right: 30rem;
+  font-size: 1.7rem;
+}
+.container__description{
+  margin-top: 1rem;
+  margin-right: 35rem;
+  line-height: 1.7rem;
+  width: fit-content;
+  color: var(--grayish-blue);
+}
+
+.container__image{
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: auto;
+}
+
+.grid__lower{
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 12fr;
+}
+
+.grid__lower_image{
+  border-radius: 50%;
+  height: 3.5rem;
+  width: auto;
+}
+
+.grid__lower_name{
+  font-size: 1rem;
+  margin-top: .4rem;
+}
+
+.grid__lower_date{
+  margin-top: .4rem;
+  color: var(--grayish-blue);
+}
+
+
+@media only screen and ( max-width: 600px ){
+  .container{
+    grid-template-columns: 1fr;
+  }
+  .container__image{
+    top: 0;
+    left: 0;
+    height: 62%;
+  }
+}
