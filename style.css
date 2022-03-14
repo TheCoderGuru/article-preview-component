@@ -107,6 +107,7 @@ body {
   background-color: var(--grayish-blue);
   display: flex;
   flex-direction: row;
+  height: 6vh;
 }
 
 .social_icon{
