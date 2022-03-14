@@ -99,6 +99,22 @@ body {
   background-color: var(--light-grayish-blue);
 }
 
+.social__container{
+  display: none;
+}
+
+.grid{
+  background-color: var(--grayish-blue);
+  display: flex;
+  flex-direction: row;
+}
+
+.social_icon{
+  height: 1rem;
+  width: 1rem;
+  margin-left: 2rem;
+}
+
 @media only screen and ( min-width: 1440px ){
   .container{
     grid-template-columns: 1fr 10fr;
