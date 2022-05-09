@@ -40,7 +40,7 @@ body {
 .container__title {
   font-size: 1.2rem;
   padding: 1rem;
-  line-height: 1.5rem;
+  line-height: 1.8rem;
   width: 90%;
   margin-left: 2.5rem;
   margin-right: 1rem;
@@ -71,14 +71,14 @@ body {
 
 .grid__lower_image{
   border-radius: 50%;
-  height: 4rem;
+  height: 3rem;
   margin-left: 3rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 2rem;
 }
 
 .grid__lower_name{
-  margin-top: 2.6rem;
+  margin-top: 1rem;
   margin-left: 1rem;
   font-size: 1rem;
   color: var(--very-dark-grayish-blue)
@@ -93,31 +93,42 @@ body {
 
 .share__icon{
   position: absolute;
-  margin-top: 3.3rem;
   right: 2.2rem;
-  border-radius: 50%;
+  border-radius: 70%;
   padding: .5rem;
+  margin-top: 2.5em;
+  z-index: 1;
   background-color: var(--light-grayish-blue);
 }
 
 .social__container{
-  display: none;
+ display: none;
 }
+
+.open{
+   display: block;
+  position: absolute;
+  bottom: 0;
+  height: 5rem;
+  transition: 300ms ease-in ;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  width: 100%;
+  background-color: var(--very-dark-grayish-blue);
+}
+
 
 .grid{
-  background-color: var(--very-dark-grayish-blue);
   display: flex;
-  flex-direction: row;
-  height: 6vh;
-  width: 30vh;
-  padding: 1em;
-  border-radius: 1em;
-  margin-bottom: 5em;
-  margin-right: 34em;
+  padding: 2em;
 }
-
+.grid h4{
+  text-transform: uppercase;
+  color: var(--desaturated-dark-blue);
+}
 .social_icon{
   height: 1rem;
+  position: relative;
   width: 1rem;
   margin-left: 2rem;
 }
@@ -126,9 +137,17 @@ body {
   .container{
     grid-template-columns: 1fr 10fr;
     position: relative;
-    width: 48%;
+    width: 62%;
     margin: 9rem;
     margin: 6rem auto;
+  }
+
+  .open{
+    margin-bottom: 4rem;
+    margin-left: 16em;
+    width: fit-content;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
   }
 
   .container__image{
@@ -145,6 +164,8 @@ body {
     margin-top: 1rem;
     margin-bottom: 0;
     width: 30%;
+    padding: .5em;
+    margin-left: 2.5em;
   }
 
   .container__description{
@@ -161,5 +182,13 @@ body {
   .share__icon{
     position: absolute;
     left: 26rem;
+  }
+
+  .grid{
+    padding: 1.6em;
+  }
+
+  .social__container{
+    height: 4em;
   }
 }
